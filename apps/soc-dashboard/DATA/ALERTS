@@ -1,0 +1,10 @@
+[
+  {
+    "summary": "    raise AdvisoriesLoadingError(",
+    "ts": "2025-11-06 11:05:44"
+  },
+  {
+    "summary": "notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.",
+    "ts": "2025-11-06 11:05:44"
+  }
+]

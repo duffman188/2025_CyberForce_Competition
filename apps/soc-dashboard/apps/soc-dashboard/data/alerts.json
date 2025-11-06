@@ -1,0 +1,15 @@
+[
+  {
+    "alert": "smoke-test",
+    "level": "info",
+    "ts": "2025-11-06 10:03:09"
+  },
+  {
+    "summary": "MariaDB login failure on 10.0.153.140",
+    "ts": "2025-11-06 10:03:09"
+  },
+  {
+    "alert": "smoke-test",
+    "ts": "2025-11-06 10:36:01"
+  }
+]

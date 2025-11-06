@@ -1,0 +1,14 @@
+[
+  {
+    "name": "HTTP (OpenSUSE)",
+    "host": "10.0.0.145",
+    "port": 80,
+    "up": false
+  },
+  {
+    "name": "MariaDB (Win22)",
+    "host": "10.0.0.140",
+    "port": 3306,
+    "up": false
+  }
+]

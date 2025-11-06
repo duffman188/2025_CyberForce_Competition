@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Web (WinSrv)",
+    "host": "10.0.153.140",
+    "port": 80,
+    "up": true
+  },
+  {
+    "name": "HTTPS (WinSrv)",
+    "host": "10.0.153.140",
+    "port": 443,
+    "up": true
+  },
+  {
+    "name": "MariaDB (WinSrv)",
+    "host": "10.0.153.140",
+    "port": 3306,
+    "up": true
+  },
+  {
+    "name": "RDP (WinSrv)",
+    "host": "10.0.153.140",
+    "port": 3389,
+    "up": true
+  },
+  {
+    "name": "DNS (Infra)",
+    "host": "10.0.153.142",
+    "port": 53,
+    "up": true
+  },
+  {
+    "name": "MySQL (Infra)",
+    "host": "10.0.153.142",
+    "port": 3306,
+    "up": true
+  },
+  {
+    "name": "RDP (Infra)",
+    "host": "10.0.153.142",
+    "port": 3389,
+    "up": true
+  },
+  {
+    "name": "SSH (Linux)",
+    "host": "10.0.153.145",
+    "port": 22,
+    "up": true
+  },
+  {
+    "name": "nginx (Linux)",
+    "host": "10.0.153.145",
+    "port": 80,
+    "up": true
+  },
+  {
+    "name": "Zeek Sensor",
+    "host": "10.0.153.181",
+    "port": 22,
+    "up": false
+  },
+  {
+    "name": "Suricata Sensor",
+    "host": "10.0.153.188",
+    "port": 22,
+    "up": false
+  },
+  {
+    "name": "Syslog Collector",
+    "host": "10.0.153.129",
+    "port": 514,
+    "up": false
+  },
+  {
+    "name": "SNMP Monitor",
+    "host": "10.0.153.129",
+    "port": 161,
+    "up": false
+  },
+  {
+    "name": "NTP Server",
+    "host": "10.0.153.129",
+    "port": 123,
+    "up": false
+  }
+]
