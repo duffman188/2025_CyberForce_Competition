@@ -1,1 +1,0 @@
-../soc-dashboard/app.py
