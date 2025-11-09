@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.log
+.venv/
+venv/
+.env
+data/*.bak
+archive/
+DATA
+apps/soc-dashboard/data

@@ -5,3 +5,6 @@ This will be where the MOST up to date items will be kept for the competition. S
 Infrastructure access will be provided on November 3, 2025 at 12pm CT.
 
 The week of October 27, you should be actively working on your C-Suite video. Good luck.
+
+
+NOTE: 'blue_team' moved to 'apps/blue_team' on 20251109T085715; symlink created for compatibility.

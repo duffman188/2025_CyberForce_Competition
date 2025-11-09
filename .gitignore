@@ -1,0 +1,5 @@
+# local cleanup recommendations
+archive/
+DATA/
+*.bak
+*.old

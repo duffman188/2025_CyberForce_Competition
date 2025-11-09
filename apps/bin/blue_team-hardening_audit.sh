@@ -1,0 +1,1 @@
+../blue_team/hardening_audit.sh

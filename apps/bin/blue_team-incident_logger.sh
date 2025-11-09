@@ -1,0 +1,1 @@
+../blue_team/incident_logger.sh
