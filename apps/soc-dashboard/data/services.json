@@ -1,8 +1,18 @@
 [
-  {"name":"Public DB (Win22)", "host":"10.0.200.140", "port":3306, "up":false},
-  {"name":"AD/DNS (Win19)",   "host":"10.0.200.141", "port":389,  "up":false},
-  {"name":"HMI (Win19)",      "host":"10.0.200.142", "port":8088, "up":false},
-  {"name":"PLC (Ubuntu)",     "host":"10.0.200.143", "port":502,  "up":false},
-  {"name":"Task Box (Ubuntu)","host":"10.0.200.144", "port":22,   "up":false},
-  {"name":"Web Server (SUSE)","host":"10.0.200.145", "port":80,   "up":false}
+  {"name": "Jump SSH", "host": "10.0.153.143", "port": 22, "type": "tcp"},
+  {"name": "SUSE SSH", "host": "10.0.153.145", "port": 22, "type": "tcp"},
+  {"name": "SUSE HTTPS", "host": "10.0.153.145", "port": 443, "type": "tcp"},
+  {"name": "Public DB (Win22)", "host": "10.0.200.140", "port": 3306, "type": "tcp"},
+  {"name": "AD/DNS (Win19)", "host": "10.0.200.141", "port": 389, "type": "tcp"},
+  {"name": "HMI (Win19)", "host": "10.0.200.142", "port": 8088, "type": "http"},
+  {"name": "PLC (Ubuntu)", "host": "10.0.200.143", "port": 502, "type": "tcp"},
+  {"name": "Task Box (Ubuntu)", "host": "10.0.200.144", "port": 22, "type": "tcp"},
+  {"name": "Web Server (SUSE)", "host": "10.0.200.145", "port": 80, "type": "http"},
+  {"name": "OpenSUSE HTTP", "host": "10.0.200.140", "port": 80, "type": "http"},
+  {"name": "Win22 phpMyAdmin", "host": "10.0.200.142", "port": 80, "type": "http"},
+  {"name": "MariaDB", "host": "10.0.200.142", "port": 3306, "type": "tcp"},
+  {"name": "Win19 AD LDAP", "host": "10.0.200.141", "port": 389, "type": "tcp"},
+  {"name": "TASK SSH", "host": "10.0.200.144", "port": 22, "type": "tcp"},
+  {"name": "TASK SMTP", "host": "10.0.200.144", "port": 25, "type": "tcp"}
 ]
+

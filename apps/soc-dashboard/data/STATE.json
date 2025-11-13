@@ -1,0 +1,132 @@
+{
+  "Public DB (Win22)@10.0.200.140:3306": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "AD/DNS (Win19)@10.0.200.141:389": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "HMI (Win19)@10.0.200.142:8088": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "PLC (Ubuntu)@10.0.200.143:502": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "Task Box (Ubuntu)@10.0.200.144:22": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "Web Server (SUSE)@10.0.200.145:80": {
+    "status": "DOWN",
+    "severity": "Critical",
+    "change_type": "None",
+    "latency_ms": null,
+    "last_check": "2025-11-12T17:57:54.344580+00:00",
+    "fail_count": 1,
+    "ok_count": 0,
+    "recent_changes": []
+  },
+  "10.0.200.140:3306": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.141:389": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.142:8088": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.143:502": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.144:22": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.145:80": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.153.143:22": {
+    "status": "UP",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": 95
+  },
+  "10.0.153.145:22": {
+    "status": "UP",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": 106
+  },
+  "10.0.153.145:80": {
+    "status": "UP",
+    "last_check": "2025-11-13T17:07:52.690269+00:00",
+    "latency_ms": 92
+  },
+  "10.0.153.145:443": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.140:80": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.142:80": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.142:3306": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  },
+  "10.0.200.144:25": {
+    "status": "DOWN",
+    "last_check": "2025-11-13T17:20:47.340713+00:00",
+    "latency_ms": null
+  }
+}

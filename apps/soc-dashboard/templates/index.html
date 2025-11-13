@@ -2,95 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>SOC Dashboard</title>
   <style>
-    :root {
-      --bg:#0f1117; --panel:#141824; --text:#e6e6e6; --muted:#9aa0aa;
-      --up:#2ecc71; --down:#ff5c5c; --warn:#f5a623; --mono:#c9d1d9;
-      --card:#1a2030; --table:#0d1220; --border:#252a38;
-      --accent:#6ea8fe;
-    }
-    html, body { background:var(--bg); color:var(--text); margin:0; font:14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    header { padding:16px 20px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
-    header h1 { margin:0; font-size:20px; }
-    header .subtle { color:var(--muted); font-size:12px; }
-    main { padding:18px; max-width:1200px; margin:0 auto; }
-    .cards { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:16px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; }
-    .card .card-title { color:var(--muted); font-size:12px; margin-bottom:8px; }
-    .big { font-size:28px; font-weight:700; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; color:var(--mono); }
-    .actions { display:flex; align-items:center; gap:10px; }
-    button { background:var(--accent); color:#081018; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; }
-    button:active { transform: translateY(1px); }
-    .panel { background:var(--panel); border:1px solid var(--border); border-radius:12px; margin-top:14px; overflow:hidden; }
-    .panel-header { padding:12px 14px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
-    table { width:100%; border-collapse:collapse; background:var(--table); }
-    th, td { padding:10px 12px; border-bottom:1px solid var(--border); }
-    th { text-align:left; color:var(--muted); font-weight:600; font-size:12px; }
-    tr:hover td { background:#11162a; }
-    .status-up { color:var(--up); font-weight:700; }
-    .status-down { color:var(--down); font-weight:700; }
-    .status-warn { color:var(--warn); font-weight:700; }
-    footer { color:var(--muted); font-size:12px; padding:14px 0 0; text-align:center; }
-    @media (max-width:900px){ .cards{ grid-template-columns: repeat(2,1fr);} }
-    @media (max-width:600px){ .cards{ grid-template-columns: 1fr;} th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4){ display:none;} }
+    :root { --bg:#0f1216; --fg:#e5e7eb; --muted:#9aa4b2; --up:#39d353; --down:#ff5c5c; --warn:#f1c40f; --deg:#ffa500; --card:#11161d; --table:#0b0f14; --border:#1f2937; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font: 15px/1.45 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; }
+    header { padding:16px 20px; display:flex; gap:16px; align-items:baseline; border-bottom:1px solid var(--border); }
+    h1 { margin:0; font-size:22px; }
+    .subtle { color:var(--muted); font-size:12px; }
+    main { padding:16px 20px; max-width:1100px; margin:0 auto; }
+    .cards { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:12px; }
+    .card { background:var(--card); border:1px solid var(--border); padding:12px; border-radius:10px; }
+    .card-title { color:var(--muted); font-size:12px; margin-bottom:6px; }
+    .big-num { font-size:28px; font-weight:700; }
+    .mono { font-family: var(--mono); }
+    .panel { margin-top:16px; background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+    .panel-header { padding:12px 12px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+    table { width:100%; border-collapse: collapse; background:var(--table); }
+    thead th { text-align:left; font-weight:600; color:var(--muted); font-size:12px; padding:8px 10px; border-bottom:1px solid var(--border); }
+    tbody td { padding:8px 10px; border-bottom:1px solid var(--border); }
+    .UP { color:var(--up); font-weight:700; }
+    .DOWN { color:var(--down); font-weight:700; }
+    .Warning, .Flapping { color:var(--warn); font-weight:700; }
+    .Degraded, .DEGRADED { color:var(--deg); font-weight:700; }
+    .actions { display:flex; gap:8px; align-items:center; }
+    button { background:#1f2937; color:#fff; border:1px solid var(--border); padding:8px 10px; border-radius:8px; cursor:pointer; }
+    button:hover { filter:brightness(1.1); }
+    code { background:#11161d; border:1px solid var(--border); padding:2px 5px; border-radius:6px; }
+    footer { color:var(--muted); font-size:12px; padding:12px 0 0 0; }
+    @media (max-width: 880px) { .cards { grid-template-columns: repeat(2,minmax(0,1fr)); } }
   </style>
 </head>
 <body>
   <header>
-    <div>
-      <h1>SOC Dashboard</h1>
-      <div class="subtle">Endpoints: <code>/api/services</code>, <code>/api/alerts</code>, <code>/api/run</code>, <code>/api/stream</code></div>
-    </div>
+    <h1>SOC Dashboard</h1>
+    <div class="subtle">Endpoints: <code>/api/services</code>, <code>/api/alerts</code>, <code>/api/run</code>, <code>/api/stream</code></div>
   </header>
 
   <main>
     <section class="cards">
-      <div class="card">
-        <div class="card-title">Services</div>
-        <div class="big" id="serviceCount">0</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Alerts</div>
-        <div class="big" id="alertCount">0</div>
-      </div>
-      <div class="card">
-        <div class="card-title">Last Update</div>
-        <div class="mono" id="lastUpdate">-</div>
-      </div>
+      <div class="card"><div class="card-title">Services</div><div class="big-num" id="svcCount">0</div></div>
+      <div class="card"><div class="card-title">Alerts</div><div class="big-num" id="alertCount">0</div></div>
+      <div class="card"><div class="card-title">Last Update</div><div class="mono" id="lastUpdate">-</div></div>
       <div class="card actions">
-        <button id="runChecks">Run Checks Now</button>
-        <span class="subtle">SSE live &nbsp;•&nbsp; 10s fallback</span>
+        <button id="refreshBtn">Run checks</button>
+        <label><input type="checkbox" id="autoChk" checked/> Auto-refresh (10s fallback)</label>
       </div>
     </section>
 
     <section class="panel">
-      <div class="panel-header">
-        <h3>Monitored Services</h3>
-      </div>
-      <table id="servicesTable">
-        <thead>
-          <tr>
-            <th>Status</th><th>Name</th><th>Host</th><th>Port</th><th>Latency</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
+      <div class="panel-header"><h3>Monitored Services</h3></div>
+      <table>
+        <thead><tr>
+          <th>Status</th><th>Name</th><th>Host</th><th>Port</th><th>Latency</th>
+        </tr></thead>
+        <tbody id="servicesTbody"></tbody>
       </table>
     </section>
 
-    <section class="panel">
-      <div class="panel-header">
-        <h3>Recent Alerts</h3>
-      </div>
-      <table id="alertsTable">
-        <thead>
-          <tr>
-            <th>Time (UTC)</th><th>Service</th><th>Host</th><th>Port</th><th>Status</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
+    <section class="panel" style="margin-top:16px;">
+      <div class="panel-header"><h3>Recent Alerts</h3></div>
+      <table>
+        <thead><tr>
+          <th>Time (UTC)</th><th>Service</th><th>Host</th><th>Port</th><th>Status</th>
+        </tr></thead>
+        <tbody id="alertsTbody"></tbody>
       </table>
     </section>
 
@@ -98,124 +75,127 @@
   </main>
 
   <script>
-    // ---- cache last-good so brief empty responses don't wipe UI ----
+    // ===== Last-known-good caches to prevent flicker to 0 =====
     let lastServices = [];
     let lastAlerts = [];
-    let pollingTimer = null;
 
-    function statusClass(s) {
-      const t = (s || "").toUpperCase();
-      if (t === "UP") return "status-up";
-      if (t === "DEGRADED" || t === "FLAPPING" || t === "WARNING") return "status-warn";
-      return "status-down";
-    }
+    // ===== DOM helpers =====
+    const $ = (id) => document.getElementById(id);
+    const setLastUpdate = () => { const el = $("lastUpdate"); if (el) el.textContent = new Date().toISOString(); };
+
     function asServices(payload) {
+      if (!payload) return [];
+      // API returns {services: [...]}
+      if (Array.isArray(payload.services)) return payload.services;
       if (Array.isArray(payload)) return payload;
-      if (payload && Array.isArray(payload.services)) return payload.services;
       return [];
     }
+
     function asAlerts(payload) {
+      if (!payload) return [];
+      if (Array.isArray(payload.alerts)) return payload.alerts;
       if (Array.isArray(payload)) return payload;
-      if (payload && Array.isArray(payload.alerts)) return payload.alerts;
       return [];
     }
-    function setLastUpdate() {
-      document.getElementById("lastUpdate").textContent = new Date().toISOString();
-    }
-    function updateServices(services) {
-      const tbody = document.querySelector("#servicesTable tbody");
+
+    function updateServices(servicesMaybe) {
+      const services = (Array.isArray(servicesMaybe) && servicesMaybe.length) ? servicesMaybe : lastServices;
+      if (Array.isArray(servicesMaybe) && servicesMaybe.length) lastServices = servicesMaybe;
+
+      const tbody = $("servicesTbody"); if (!tbody) return;
       tbody.innerHTML = "";
-      services.forEach(s => {
-        const st = s.status || (s.up ? "UP" : "DOWN") || "UNKNOWN";
-        const lat = (s.latency_ms != null) ? `${s.latency_ms} ms` : "-";
+      for (const s of services) {
+        const status = (s.status || (s.up ? "UP" : "DOWN")).toUpperCase();
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td class="${statusClass(st)}">${st}</td>
+          <td class="${status}">${status}</td>
           <td>${s.name ?? "-"}</td>
           <td class="mono">${s.host ?? "-"}</td>
           <td class="mono">${s.port ?? "-"}</td>
-          <td class="mono">${lat}</td>
-        `;
+          <td class="mono">${s.latency_ms ?? "-"}</td>`;
         tbody.appendChild(tr);
-      });
-      document.getElementById("serviceCount").textContent = services.length;
+      }
+      const svcCount = $("svcCount"); if (svcCount) svcCount.textContent = String(services.length);
     }
-    function updateAlerts(alerts) {
-      const tbody = document.querySelector("#alertsTable tbody");
+
+    function updateAlerts(alertsMaybe) {
+      const alerts = (Array.isArray(alertsMaybe) && alertsMaybe.length) ? alertsMaybe : lastAlerts;
+      if (Array.isArray(alertsMaybe) && alertsMaybe.length) lastAlerts = alertsMaybe;
+
+      const tbody = $("alertsTbody"); if (!tbody) return;
       tbody.innerHTML = "";
-      alerts.slice(-50).reverse().forEach(a => {
-        const st = a.status ?? a.change ?? "-";
-        const when = a.time ?? a.timestamp ?? "-";
-        const name = a.service ?? a.name ?? "-";
+      for (const a of alerts) {
+        const status = String(a.status || "-").toUpperCase();
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td class="mono">${when}</td>
-          <td>${name}</td>
+          <td class="mono">${a.time ?? "-"}</td>
+          <td>${a.service ?? "-"}</td>
           <td class="mono">${a.host ?? "-"}</td>
           <td class="mono">${a.port ?? "-"}</td>
-          <td class="${statusClass(st)}">${st}</td>
-        `;
+          <td class="${status}">${status}</td>`;
         tbody.appendChild(tr);
-      });
-      document.getElementById("alertCount").textContent = alerts.length;
+      }
+      const alertCount = $("alertCount"); if (alertCount) alertCount.textContent = String(alerts.length);
     }
-    function safeRender(servicesMaybe, alertsMaybe) {
-      const services = (Array.isArray(servicesMaybe) && servicesMaybe.length) ? servicesMaybe : lastServices;
-      const alerts   = (Array.isArray(alertsMaybe)) ? alertsMaybe : lastAlerts;
 
-      if (Array.isArray(servicesMaybe) && servicesMaybe.length) lastServices = servicesMaybe;
-      if (Array.isArray(alertsMaybe)) lastAlerts = alertsMaybe;
-
-      updateServices(services);
-      updateAlerts(alerts);
-      setLastUpdate();
+    // ===== SSE (live) + Fallback poller =====
+    let es;
+    function startSSE() {
+      try {
+        es = new EventSource("/api/stream");
+        es.onmessage = (ev) => {
+          const raw = (ev.data || "").trim();
+          if (!raw || raw === "{}") return; // ignore heartbeat
+          try {
+            const data = JSON.parse(raw);
+            const services = asServices(data.services ?? data);
+            const alerts   = asAlerts(data.alerts ?? []);
+            updateServices(services.length ? services : null);
+            updateAlerts(alerts.length ? alerts : null);
+            setLastUpdate();
+          } catch {}
+        };
+        es.onerror = () => { try { es.close(); } catch {} setTimeout(startSSE, 3000); };
+      } catch {
+        // no SSE — fallback poll will still run
+      }
     }
-    async function fetchData() {
+
+    async function pollOnce() {
       try {
         const [svcRes, alertRes] = await Promise.allSettled([
           fetch("/api/services").then(r => r.ok ? r.json() : Promise.reject()),
           fetch("/api/alerts").then(r => r.ok ? r.json() : Promise.reject()),
         ]);
-        const services = svcRes.status === "fulfilled" ? asServices(svcRes.value) : null;
-        const alerts   = alertRes.status === "fulfilled" ? asAlerts(alertRes.value) : null;
-        safeRender(services, alerts);
-      } catch {
-        safeRender(null, null); // keep last-good
-      }
+        const services = (svcRes.status === "fulfilled") ? asServices(svcRes.value) : null;
+        const alertsRaw = (alertRes.status === "fulfilled") ? asAlerts(alertRes.value) : null;
+        const alerts = (Array.isArray(alertsRaw) && alertsRaw.length) ? alertsRaw : null;
+        updateServices(services);
+        updateAlerts(alerts);
+        setLastUpdate();
+      } catch { /* keep last-known-good */ }
     }
-    document.getElementById("runChecks").addEventListener("click", async () => {
+
+    function startPoller() {
+      pollOnce();
+      setInterval(() => {
+        if ($("autoChk")?.checked) pollOnce();
+      }, 10_000);
+    }
+
+    $("refreshBtn").onclick = async () => {
       try { await fetch("/api/run", { method: "POST" }); } catch {}
-      await fetchData();
-    });
+      pollOnce();
+    };
 
-    (function initStream(){
-      if (!window.EventSource) {
-        if (!pollingTimer) pollingTimer = setInterval(fetchData, 10000);
-        fetchData();
-        return;
-      }
-      const es = new EventSource("/api/stream");
-      es.onmessage = (ev) => {
-        const raw = (ev.data || "").trim();
-        if (!raw || raw === "{}") return;  // ignore empties/keepalive
-        try {
-          const data = JSON.parse(raw);
-          const services = asServices(data.services ?? data);
-          const alerts = asAlerts(data.alerts ?? []);
-          safeRender(services, alerts);
-        } catch {
-          /* ignore parse errors */
-        }
-      };
-      es.onerror = () => {
-        try { es.close(); } catch {}
-        if (!pollingTimer) pollingTimer = setInterval(fetchData, 10000);
-        fetchData();
-      };
+    // Initial load
+    (async function init() {
+      setLastUpdate();
+      startSSE();
+      startPoller();
+      // Prime UI with initial data to avoid empty first paint
+      pollOnce();
     })();
-
-    // initial paint
-    fetchData();
   </script>
 </body>
 </html>

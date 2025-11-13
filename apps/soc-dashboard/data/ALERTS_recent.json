@@ -1,0 +1,877 @@
+[
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "Public DB (Win22)",
+    "type": "tcp",
+    "host": "10.0.200.140",
+    "port": 3306,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "AD/DNS (Win19)",
+    "type": "tcp",
+    "host": "10.0.200.141",
+    "port": 389,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "HMI (Win19)",
+    "type": "tcp",
+    "host": "10.0.200.142",
+    "port": 8088,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "PLC (Ubuntu)",
+    "type": "tcp",
+    "host": "10.0.200.143",
+    "port": 502,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "Task Box (Ubuntu)",
+    "type": "tcp",
+    "host": "10.0.200.144",
+    "port": 22,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:57:54.344580+00:00",
+    "service": "Web Server (SUSE)",
+    "type": "tcp",
+    "host": "10.0.200.145",
+    "port": 80,
+    "status": "DOWN",
+    "severity": "Critical",
+    "change": "None",
+    "latency_ms": null,
+    "details": {}
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "Public DB (Win22)",
+    "host": "10.0.200.140",
+    "port": 3306,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "AD/DNS (Win19)",
+    "host": "10.0.200.141",
+    "port": 389,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "HMI (Win19)",
+    "host": "10.0.200.142",
+    "port": 8088,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "PLC (Ubuntu)",
+    "host": "10.0.200.143",
+    "port": 502,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "Task Box (Ubuntu)",
+    "host": "10.0.200.144",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T17:59:00.941272+00:00",
+    "service": "Web Server (SUSE)",
+    "host": "10.0.200.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T18:38:38.524070+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 139,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T18:38:38.524070+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 106,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T18:38:38.524070+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 178,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T18:38:38.524070+00:00",
+    "service": "SUSE HTTPS",
+    "host": "10.0.153.145",
+    "port": 443,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T20:29:26.277991+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 639,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T20:29:40.606642+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 118,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T20:50:43.300760+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DEGRADED",
+    "latency_ms": 702,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T20:54:18.588060+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 609,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T21:01:16.314372+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DEGRADED",
+    "latency_ms": 616,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T22:27:57.891777+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DEGRADED",
+    "latency_ms": 558,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T22:28:20.845282+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 138,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T23:10:45.441050+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T23:11:18.475609+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T23:11:18.475609+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-12T23:11:18.475609+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:05:30.350475+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 86,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:05:30.350475+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 163,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:05:30.350475+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 118,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:10:48.773470+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:10:48.773470+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:10:48.773470+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:11:51.487247+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 40,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:11:51.487247+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 84,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:11:51.487247+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 167,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:13:04.090706+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:14:51.070958+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:14:51.070958+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:14:51.070958+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:15:02.138246+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 176,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:15:02.138246+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 91,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:15:02.138246+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 137,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:16:03.255252+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 722,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:18:26.507857+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:18:26.507857+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:18:26.507857+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:12.062935+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 219,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:12.062935+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 214,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:12.062935+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 105,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:36.328935+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:36.328935+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:36.328935+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:53.129962+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 211,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:21:53.129962+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 218,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:23:55.336687+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:23:55.336687+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:10.288918+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 391,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:10.288918+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 300,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:10.288918+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 213,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:30.847093+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:30.847093+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T00:25:30.847093+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T05:35:17.258310+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 49,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T05:35:17.258310+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 107,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T05:35:17.258310+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "UP",
+    "latency_ms": 99,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T06:19:05.679053+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 665,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:06:02.277871+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 962,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:06:48.525600+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 107,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:08:40.942005+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DEGRADED",
+    "latency_ms": 919,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:10:56.758268+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 506,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:19:27.620695+00:00",
+    "service": "SUSE HTTP",
+    "host": "10.0.153.145",
+    "port": 80,
+    "status": "DEGRADED",
+    "latency_ms": 608,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:23:42.845327+00:00",
+    "service": "Jump SSH",
+    "host": "10.0.153.143",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 517,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:28:40.510475+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "DEGRADED",
+    "latency_ms": 659,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T14:28:58.701662+00:00",
+    "service": "SUSE SSH",
+    "host": "10.0.153.145",
+    "port": 22,
+    "status": "UP",
+    "latency_ms": 150,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T17:08:34.219366+00:00",
+    "service": "OpenSUSE HTTP",
+    "host": "10.0.200.140",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T17:08:34.219366+00:00",
+    "service": "Win22 phpMyAdmin",
+    "host": "10.0.200.142",
+    "port": 80,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T17:08:34.219366+00:00",
+    "service": "MariaDB",
+    "host": "10.0.200.142",
+    "port": 3306,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  },
+  {
+    "time": "2025-11-13T17:08:34.219366+00:00",
+    "service": "TASK SMTP",
+    "host": "10.0.200.144",
+    "port": 25,
+    "status": "DOWN",
+    "latency_ms": null,
+    "details": {
+      "http_code": null
+    }
+  }
+]
